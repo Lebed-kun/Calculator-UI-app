@@ -1,0 +1,159 @@
+/*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+--------------------------------------------------------------------------------------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* ADDITIONAL RESETS BEGIN */
+
+input, input:focus {
+	outline: none;
+	border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: transparent;
+}
+
+input:hover {
+	cursor: default;
+}
+
+/* ADDITIONAL RESETS END */
+
+/* STYLES BEGIN */
+
+body {
+	background-image: url("./img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.calculator {
+	box-sizing: border-box;
+	width: 370px;
+	margin: 176px auto;
+}
+
+.calc-display {
+	box-sizing: border-box;
+	height: 139px;
+	background-color: #212121;
+	padding-right: 30px;
+}
+
+#display-input {
+	font-family: 'Lato', sans-serif;
+	font-size: 18pt;
+	text-shadow: 0 0 0 #d98192;
+	float: right;
+	text-align: right;
+	line-height: 35pt;
+	margin-top: 9px;
+	width: 300px;
+}
+
+#display-output {
+	font-family: 'Lato Light', sans-serif;
+	font-size: 50pt;
+	text-shadow: 0 0 0 #fff;
+	float: right;
+	text-align: right;
+	margin-top: -12px;
+	width: 270px;
+}
+
+.calc-buttons {
+	box-sizing: border-box;
+	margin-left: 2px;
+}
+
+.button {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 92.5px;
+	height: 92.5px;
+	padding: 34px;
+	margin: 0 -2px;
+	text-align: center;
+}
+
+.button>span {
+	font-family: 'Lato Light', sans-serif;
+	font-size: 23pt;
+}
+
+.button:nth-child(4n)>span {
+	color: #fff;
+}
+
+.button:nth-child(2) {
+	padding: 34px 25px;
+}
+
+.button:nth-child(2)>span:first-child {
+	font-size: 17pt;
+	display: inline-block;
+	margin-top: -2px;
+	vertical-align: top;
+}
+
+.button:nth-child(2)>span:last-child {
+	display: inline-block;
+	margin-bottom: -3px;
+	vertical-align: bottom;
+}
+
+.button-0 {
+	background-color: #fff;
+}
+
+.button-eq {
+	width: 185px;
+	background-color: #e62f89;
+	color: #fff;
+	text-align: 
+}
+
+/* STYLES END */
+
+/* HOVER EFFECTS BEGIN */
+
+.button:hover {
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.button:nth-child(4n):hover {
+	background-color: #999;
+}
+
+.button-0:hover {
+	background-color: #ccc;
+}
+
+.button-eq:hover {
+	background-color: #adbd3e;
+}
+
+/* HOVER EFFECTS END */
+
+/* CLICK EFFECTS BEGIN */
+
+.button:active {
+	background-color: #999;
+}
+
+.button:nth-child(4n):active {
+	background-color: #333;
+}
+
+.button-0:active {
+	background-color: #832bce;
+}
+
+.button-eq:active {
+	background-color: #59ce2b;
+}
+
+/* CLICK EFFECTS END */
