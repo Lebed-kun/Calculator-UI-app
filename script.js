@@ -173,6 +173,12 @@ window.onload = function() {
 		}
 	}
 
+	outputDisplay.onclick = function() {
+		outputDisplay.select();
+		document.execCommand("copy");
+		alert("Result is copied to clipboard");
+	}
+
 	setButtonsInput();
 	setKeyboardInput();
 	setInputFieldFocus();
