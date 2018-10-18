@@ -137,8 +137,8 @@ window.onload = function() {
 	}
 
 	function setOutput() {
-		var OUTPUT_MAX_LENGTH = 7;
-		var SCIETIFIC_MAX_LENGTH = 10;
+		var OUTPUT_MAX_LENGTH = 9;
+		var SCIETIFIC_MAX_LENGTH = 12;
 
 		var calcResult = eval(inputDisplay.value
 			.replace(/x/g, '*'));

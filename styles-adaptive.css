@@ -1,0 +1,164 @@
+/*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+--------------------------------------------------------------------------------------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* ADDITIONAL RESETS BEGIN */
+
+input, input:focus {
+	outline: none;
+	border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: transparent;
+}
+
+input:hover {
+	cursor: default;
+}
+
+/* ADDITIONAL RESETS END */
+
+/* STYLES BEGIN */
+
+body {
+	background-image: url("./img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.calculator {
+	box-sizing: border-box;
+	width: 19.27vw;
+	margin: 17.63vh auto;
+}
+
+.calc-display {
+	box-sizing: border-box;
+	height: 14.63vh;
+	background-color: #212121;
+	padding-right: 1.56vw;
+}
+
+#display-input {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.25vw;
+	text-shadow: 0 0 0 #d98192;
+	float: right;
+	text-align: right;
+	line-height: 4.91vh;
+	margin-top: 0.95vh;
+	width: 15.63vw;
+}
+
+#display-output {
+	font-family: 'Lato Light', sans-serif;
+	font-size: 3.47vw;
+	text-shadow: 0 0 0 #fff;
+	float: right;
+	text-align: right;
+	margin-top: -1.26vh;
+	width: 14.06vw;
+}
+
+.calc-buttons {
+	box-sizing: border-box;
+	margin-left: 0.13vw;
+}
+
+.button {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 4.82vw;
+	height: 4.82vw;
+	padding: 1.77vw;
+	margin: 0 -0.15vw;
+	text-align: center;
+}
+
+.button>span {
+	font-family: 'Lato Light', sans-serif;
+	font-size: 1.6vw;
+}
+
+.button:nth-child(4n)>span {
+	color: #fff;
+}
+
+.button:nth-child(2) {
+	padding: 3vh 1vw;
+}
+
+.button:nth-child(2)>span:first-child {
+	font-size: 1.18vw;
+	display: inline-block;
+	margin-top: -0.21vh;
+	vertical-align: top;
+}
+
+.button:nth-child(2)>span:nth-child(2) {
+	font-family: 'Lato Hairline', sans-serif;
+	font-size: 1.94vw;
+}
+
+.button:nth-child(2)>span:last-child {
+	display: inline-block;
+	margin-bottom: -0.32vh;
+	vertical-align: bottom;
+}
+
+.button-0 {
+	background-color: #fff;
+}
+
+.button-eq {
+	width: 9.64vw;
+	background-color: #e62f89;
+	color: #fff;
+	text-align: center;
+}
+
+/* STYLES END */
+
+/* HOVER EFFECTS BEGIN */
+
+.button:hover {
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.button:nth-child(4n):hover {
+	background-color: #999;
+}
+
+.button-0:hover {
+	background-color: #ccc;
+}
+
+.button-eq:hover {
+	background-color: #adbd3e;
+}
+
+/* HOVER EFFECTS END */
+
+/* CLICK EFFECTS BEGIN */
+
+.button:active {
+	background-color: #999;
+}
+
+.button:nth-child(4n):active {
+	background-color: #333;
+}
+
+.button-0:active {
+	background-color: #832bce;
+}
+
+.button-eq:active {
+	background-color: #59ce2b;
+}
+
+/* CLICK EFFECTS END */
