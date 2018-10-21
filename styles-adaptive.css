@@ -72,8 +72,8 @@ body {
 	box-sizing: border-box;
 	display: inline-block;
 	width: 4.82vw;
-	height: 4.82vw;
-	padding: 1.77vw;
+	height: 9.73vh;
+	padding: 3.58vh 1.77vw;
 	margin: 0 -0.15vw;
 	text-align: center;
 }
